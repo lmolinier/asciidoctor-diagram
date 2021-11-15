@@ -39,3 +39,5 @@
 :uri-wavedrom: http://wavedrom.com
 :uri-wavedromeditor: https://github.com/wavedrom/wavedrom.github.io/releases
 :uri-wavedromcli: https://github.com/wavedrom/cli
+:uri-drawio: https://diagrams.net
+:uri-draw-exporter: https://github.com/lmolinier/draw-exporter

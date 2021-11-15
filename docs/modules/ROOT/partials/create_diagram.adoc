@@ -30,6 +30,7 @@ The following diagram types and output formats are available:
 |{uri-diagrams}[diagrams]          |       |{check}|{check}|{check}|
 |{uri-ditaa}[ditaa]                |       |       |{check}|{check}|
 |{uri-dpic}[dpic]                  |       |       |       |{check}|
+|{uri-drawio}[drawio]              |       |{check}|{check}|{check}|
 |{uri-erd}[erd]                    |       |       |{check}|{check}|
 |{uri-gnuplot}[gnuplot]            |{check}|       |{check}|{check}|{check}
 |{uri-dot}[graphviz]               |       |{check}|{check}|{check}|

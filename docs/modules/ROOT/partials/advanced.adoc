@@ -16,7 +16,7 @@ or load and register each extension individually.
 require 'asciidoctor-diagram/<extension_name>'
 ----
 
-`<extension_name>` can be one of `a2s`, `blockdiag`, `bytefield`, `diagrams`, `ditaa`, `dpic`, `erd`, `gnuplot`, `graphviz`, `meme`, `mermaid`, `msc`, `pikchr`, `plantuml`, `shaape`, `smcat`, `svgbob`, `syntrax`, `umlet`, `vega` or `wavedrom`.
+`<extension_name>` can be one of `a2s`, `blockdiag`, `bytefield`, `diagrams`, `ditaa`, `dpic`, `drawio`, `erd`, `gnuplot`, `graphviz`, `meme`, `mermaid`, `msc`, `pikchr`, `plantuml`, `shaape`, `smcat`, `svgbob`, `syntrax`, `umlet`, `vega` or `wavedrom`.
 
 Requiring one or more of these files will automatically register the extensions for all processed documents.
 
@@ -76,6 +76,7 @@ The following table lists the tools that are required for each diagram type, the
    |diagrams     |{uri-python}[Python]                                                  |`diagrams-python`
    |ditaa        |{uri-java}[Java]                                                      |`java`
    |dpic         |{uri-dpic}[dpic]                                                      |`dpic`
+   |drawio       |{uri-drawio}[Drawio]                                                  |`drawio`
    |erd          |{uri-erd}[Erd]                                                        |`erd`
    |gnuplot      |{uri-gnuplot}[Gnuplot]                                                |`gnuplot`
    |graphviz     |{uri-graphviz}[GraphViz]                                              |`dot` or `graphvizdot`
@@ -253,6 +254,15 @@ No specific attributes.
 |debug        |false           |Renders the debug grid over the resulting image.
 |fixed-slope  |false           |Makes sides of parallelograms and trapezoids fixed slope instead of fixed width.
 |transparent  |false           |Makes the background of the image transparent instead of using the background color.
+|===
+
+==== Drawio
+[cols=">,<,<",options="header"]
+|===
+|Name         |Default value   |Description
+|crop         |true            |Crop the image to the diagram content (and not the page).
+|scale        |1               |A scale factor that is applied to the image.
+|transparent  |true            |Makes the background of the image transparent instead of using the background color.
 |===
 
 ==== Gnuplot
