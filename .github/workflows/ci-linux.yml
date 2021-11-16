@@ -72,7 +72,8 @@ jobs:
                                    texlive-latex-extra \
                                    texlive-fonts-extra \
                                    git \
-                                   haskell-stack
+                                   haskell-stack \
+                                   xvfb
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
