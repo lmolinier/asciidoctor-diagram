@@ -153,7 +153,7 @@ jobs:
         run: sudo apt-get install -qq mscgen
       - name: Install draw-exporter
         run: |
-          V="1.1.10"
+          V="1.1.11"
           curl -L -s -O https://github.com/lmolinier/draw-exporter/releases/download/v${V}/draw-exporter_${V}_amd64.deb
           sudo dpkg -i draw-exporter_${V}_amd64.deb
       - name: Install Blockdiag
