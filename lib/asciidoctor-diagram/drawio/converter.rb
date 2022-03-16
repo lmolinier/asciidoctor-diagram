@@ -10,7 +10,11 @@ module Asciidoctor
       include CliGenerator
 
       OPTIONS = {
-        :crop => lambda { |o, v| o << '--no-crop' if !v }
+        :no_crop => lambda { |o, v| o << '--no-crop' if v },
+        :sheet => lambda { |o, v| o << '--sheet' << v if v },
+        :sheet_index => lambda { |o, v| o << '--sheet-index' << v if v },
+        :layers => lambda { |o, v| o << '--layers' << v if v },
+        :layer_indexes => lambda { |o, v| o << '--layer-ids' << v if v },
       }
 
       def supported_formats
@@ -29,7 +33,7 @@ module Asciidoctor
       end
 
       def convert(source, format, options)
-        generate_file(source.find_command('draw-exporter'), ".drawio", format.to_s, source.to_s) do |tool_path, source_path, output_path|
+        generate_file(source.find_command('draw-exporter'), "drawio", format.to_s, source.to_s) do |tool_path, source_path, output_path|
           args = [tool_path, format.to_s]
 
           options.each do |option, value|
